@@ -77,7 +77,7 @@ bot.on('message', msg => {
 
     if(msg.author.bot) return;
 
-    const args = msg.content.slice(prefix.length).split(/ +/);
+    const args = msg.content.slice(process.env.MADE_WITH.length).split(/ +/);
 	const command = args.shift().toLowerCase();
     
     if (!bot.commands.has(command)) return;

@@ -31,9 +31,9 @@ module.exports = {
         function random_gen() {
           var  starting_letter = "GTSF"
            var ending_letter = "JZIHGFEDCBAXWUTRQPNMLK"
-            digits = "1234567890"
-            nric = ""
-            nric += `${starting_letter.charAt(Math.floor((Math.random()*3)))}`
+           var digits = "1234567890"
+           var nric = ""
+             nric += `${starting_letter.charAt(Math.floor((Math.random()*3)))}`
             for (i = 0; i < 7; i++) {
                 nric += `${digits.charAt(Math.floor((Math.random()*9)))}`
             }
@@ -41,7 +41,7 @@ module.exports = {
             return nric
         }
         
-            rand_nric= random_gen()
+            var rand_nric= random_gen()
             while(is_valid_nric(rand_nric) == false) {
             rand_nric = random_gen()
             }
