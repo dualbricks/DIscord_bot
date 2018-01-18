@@ -71,7 +71,7 @@ bot.on('message', msg => {
             bot.uniq_commands.get('legit').execute(msg)
         }
         else if(upcase == "info") {
-            msg.send("Running on Heroku created by Wenyue\nNode version: v8.9.3\nnpm: v5.5.1");
+            msg.channel.send("Running on Glitch ^^ created by Wenyue\n\nNode version: v8.9.3\n\nnpm: v5.5.1");
         }
     };
 
