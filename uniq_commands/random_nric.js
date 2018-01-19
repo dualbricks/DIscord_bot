@@ -34,7 +34,7 @@ module.exports = {
            var digits = "1234567890"
            var nric = ""
              nric += `${starting_letter.charAt(Math.floor((Math.random()*3)))}`
-            for (i = 0; i < 7; i++) {
+            for (var i = 0; i < 7; i++) {
                 nric += `${digits.charAt(Math.floor((Math.random()*9)))}`
             }
             nric += `${ending_letter.charAt(Math.floor((Math.random()*21)))}`
