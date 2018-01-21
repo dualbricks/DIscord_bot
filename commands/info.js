@@ -5,7 +5,7 @@ module.exports = {
        var user = msg.mentions.users.first();
         if( msg.mentions.users.size == 0) {
           var  user = msg.author
-
+        const Discord = require('di
         }; 
         const uinfo = new Discord.RichEmbed()
         .setColor(0xffa5f1)

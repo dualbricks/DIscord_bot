@@ -6,7 +6,7 @@ module.exports = {
        const pics = require('fs');
        var link = pics.readFileSync("./links1.txt","utf-8").split("\n");
         if(msg.author.id == "325657843997081600") {
-         var   link = pics.readFileSync("./links2.txt","utf-8").split("\n")
+            link = pics.readFileSync("./links2.txt","utf-8").split("\n")
         };
        var winner = msg.author
         const pokewin1 = new Discord.RichEmbed()
