@@ -5,8 +5,8 @@ module.exports = {
        var user = msg.mentions.users.first();
         if( msg.mentions.users.size == 0) {
           var  user = msg.author
-        const Discord = require('di
         }; 
+        const Discord = require('discord.js');
         const uinfo = new Discord.RichEmbed()
         .setColor(0xffa5f1)
         .setAuthor(`Essential information for ${user.username}`, user.displayAvatarURL)
