@@ -96,7 +96,7 @@ bot.on('message', msg => {
 bot.on('ready', () => {
     console.log('Welcome my master...');
 
-    bot.user.setActivity("~Your Mum~");
+    bot.user.setActivity("~Code Blocks~");
 });
 
 bot.login(`${process.env.SECRET}`);
