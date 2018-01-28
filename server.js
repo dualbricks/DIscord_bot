@@ -78,7 +78,7 @@ bot.on('message', msg => {
             msg.channel.send("Running on Glitch ^^ created by Wenyue\n\nNode version: v8.9.3\n\nnpm: v5.5.1")
         }
         
-        else if(upcase.includes('test_pic')) {
+        else if(upcase.startWith('test_pic')) {
              bot.uniq_commands.get('test_pic').execute(msg)
         }
     };

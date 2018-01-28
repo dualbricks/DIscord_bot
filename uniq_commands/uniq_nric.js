@@ -29,12 +29,12 @@ module.exports = {
             }
         }
         
-       var ic = msg.content.toUpperCase().split('/ +/')[1]
+         var ic = msg.content.toUpperCase().split(' ')[1]
         if(is_valid_nric(ic)) {
-            msg.reply("YES It is legit haha");
+            msg.reply(`yess it is legit!!!`);
         }
         else {
-            msg.reply("NOO IT is not!!");
+            msg.reply(`NOOO it is not ahah`);
         }
     }
 };
