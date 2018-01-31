@@ -1,6 +1,7 @@
 module.exports = {
     name: 'legit',
     description: 'Checks if ur IC is legit',
+    usage:' is ${ic} legit?',
     execute(msg) {
         function is_valid_nric(n) {
            var str1 = `${n}`

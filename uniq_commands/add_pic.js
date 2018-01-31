@@ -1,6 +1,7 @@
 module.exports = {
     name: 'add_pic',
     description: 'check lol',
+    usage : 'add_pic link',
     execute(msg) {
       const fs = require('fs');
       var link = msg.content.split(' ')[1]

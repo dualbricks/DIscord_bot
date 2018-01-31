@@ -1,6 +1,7 @@
 module.exports = {
     name: 'test_pic',
-    description: 'check lol',
+    description: 'check out pics lol',
+    usage : 'test_pic imagenumber',
     execute(msg) {
       var num = msg.content.split(' ')[1]
        const Discord = require('discord.js');
