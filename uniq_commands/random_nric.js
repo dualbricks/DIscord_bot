@@ -1,7 +1,7 @@
 module.exports = {
     name : 'random_nric',
     description: 'Generate Random IC',
-    usa
+    usage: 'random_nric',
     execute(msg) {
         function is_valid_nric(n) {
             var str1 = `${n}`
