@@ -45,7 +45,6 @@ bot.commands = new Discord.Collection();
 bot.uniq_commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands');
 const uniq_commandsFiles = fs.readdirSync('./uniq_commands');
-
 for (const file of commandFiles) {
     const command = require(`./commands/${file}`);
     bot.commands.set(command.name, command);

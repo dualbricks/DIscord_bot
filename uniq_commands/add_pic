@@ -1,0 +1,5 @@
+module.exports = {
+    name: 'add_pic',
+    description: 'check lol',
+    execute(msg) {
+                    
