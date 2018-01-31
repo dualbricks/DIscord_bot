@@ -67,6 +67,8 @@ bot.on('message', msg => {
         }
        
         else if(upcase.includes('p.pokemon')) {
+          var pokebot = '330488924449275916'
+          if(pokebot.presence.status == 'online')
             bot.uniq_commands.get('p.pokemon').execute(msg);
         }
         
