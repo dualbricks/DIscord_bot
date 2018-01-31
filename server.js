@@ -94,7 +94,10 @@ bot.on('message', msg => {
         }
         else if(upcase == 'i want help') {
         bot.uniq_commands.get('Help').execute(msg)
-      }
+        }
+        else if(upcase == 'how many pics do i have?') {
+          bot.uniq_commands.get('num_of_pics').execute(msg)
+        }
     };
 
     if(msg.author.bot) return;
