@@ -67,9 +67,13 @@ bot.on('message', msg => {
         }
        
         else if(upcase.includes('p.pokemon')) {
-          var pokebot = '330488924449275916'
-          if(pokebot.presence.status == 'online')
+          var pokebot = bot.users.get('330488924449275916')
+          if(pokebot.presence.status == 'online') {
             bot.uniq_commands.get('p.pokemon').execute(msg);
+          }
+          else {
+            msg.reply('Sorry Pokebot is Offline!! please try again later!!')
+          }
         }
         
         else if(upcase.includes('legit') && upcase.includes('is')) {
