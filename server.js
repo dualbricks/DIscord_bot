@@ -89,6 +89,9 @@ bot.on('message', msg => {
         else if(upcase.startsWith('add_pic')) {
           bot.uniq_commands.get('add_pic').execute(msg)
         }
+        else if(upcase.startsWith('tag')) {
+          bot.uniq_commands.get('tag').execute(msg)
+        }
     };
 
     if(msg.author.bot) return;
