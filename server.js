@@ -92,6 +92,9 @@ bot.on('message', msg => {
         else if(upcase.startsWith('tag')) {
           bot.uniq_commands.get('tag').execute(msg)
         }
+        else if(upcase == 'i want help') {
+        bot.uniq_commands.get('Help').execute(msg)
+      }
     };
 
     if(msg.author.bot) return;

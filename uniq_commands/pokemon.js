@@ -1,6 +1,7 @@
 module.exports = {
     name: 'p.pokemon',
     description: 'shows pics hehe',
+    usage: 'p.pokemon',
     execute(msg,x) {
         const Discord = require('discord.js');
        const pics = require('fs');
