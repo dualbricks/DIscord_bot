@@ -2,7 +2,7 @@ Welcome to the Wenyue's Bot
 =========================
 Only possible with guidance from the community. 
 
--Thanks Darren and Carine for helping me out ^.^
+Thanks Darren and Carine for helping me out ^.^
 
 ------------
 
