@@ -120,9 +120,9 @@ bot.on('message', msg => {
 
 
 bot.on('ready', () => {
-    console.log('Welcome my master...');
+    console.log('Welcome My Master...');
 
-    bot.user.setActivity("~Code Blocks~");
+    bot.user.setActivity("Improving Myself Everyday");
 });
 
 bot.login(`${process.env.SECRET}`);
