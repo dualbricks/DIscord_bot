@@ -3,17 +3,16 @@ module.exports = {
   description : 'Bus',
   usage : 'i want help',
   execute(msg) {
-     var api = http.createClient(80, 'api.example.org');
+    var http = require('http');
+     var api = http.createClient(80, 'http://datamall2.mytransport.sg/ltaodataservice/BusArrivalv2?BusStopCode=76231');
 
   var request = api.request('GET', '/api/foo', 
     {
-      'host': 'api.example.org',
       'accept': 'application/json', 
-      'api-key': 'apikeygoeshere' 
+      'api-key': '`${process.env.BUS_Key}`' 
     });
 
   request.on('response', function (response) {});    
   request.end();
-});
   }
 };
