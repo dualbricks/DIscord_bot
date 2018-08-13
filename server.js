@@ -99,6 +99,9 @@ bot.on('message', msg => {
         else if(upcase == 'how many pics do i have?') {
           bot.uniq_commands.get('num_of_pics').execute(msg)
         }
+        else if(upcase == 'bus') {
+          bot.uniq_commands.get('bus').execute(msg)
+        }
     };
 
     if(msg.author.bot) return;
