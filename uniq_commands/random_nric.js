@@ -43,7 +43,7 @@ module.exports = {
         }
         
             var rand_nric= random_gen()
-            while(is_valid_nric(rand_nric) == false && rand_nric[1] > 1) {
+            while(is_valid_nric(rand_nric) == false || rand_nric[1] > 1 || rand_nric[2] > 8 ) {
             rand_nric = random_gen()
             }
             msg.reply(`This is your new NRIC hehehe ${rand_nric}`);      
