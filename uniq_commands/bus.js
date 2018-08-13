@@ -3,12 +3,17 @@ module.exports = {
   description : 'Bus',
   usage : 'i want help',
   execute(msg) {
-    const request = require('request');
+     var api = http.createClient(80, 'api.example.org');
 
-    request('http://datamall2.mytransport.sg/ltaodataservice/BusArrivalv2?BusStopCode=83139', { json: true }, (err, res, body) => {
-    if (err) { return console.log(err); }
-    console.log(body.url);
-    console.log(body.explanation);
+  var request = api.request('GET', '/api/foo', 
+    {
+      'host': 'api.example.org',
+      'accept': 'application/json', 
+      'api-key': 'apikeygoeshere' 
+    });
+
+  request.on('response', function (response) {});    
+  request.end();
 });
   }
 };

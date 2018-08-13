@@ -2,7 +2,8 @@
   "dependencies": {
     "express": "^4.16.2",
     "discord.js": "^11.3.0",
-    "request": ""
+    "request": "",
+    "lta-datamall": ""
   },
   "name": "my-glitch-app",
   "version": "0.0.1",
