@@ -15,14 +15,17 @@ module.exports = {
 
 function callback(error, response, body) {
   if (!error && response.statusCode == 200) {
-    var rawdata = body.Service
+    var rawdata = body
     var parsed = JSON.parse(rawdata)
-    
-    console.log(parsed);
+    var keysArray = Object.keys(parsed);
+    for (var i = 0; i < keysArray.length; i++) {
+      var key = keysArray[i]; // here is "name" of object property
+     var value = parsed[key]; // here get value "by name" as it expected with objects
+   console.log(key, value);
   }
 }
-
-request(options, callback);
 }
+request(options, callback);
   
+}
 }
