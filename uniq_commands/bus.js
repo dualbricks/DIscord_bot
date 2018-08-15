@@ -21,22 +21,16 @@ module.exports = {
       if (!error && response.statusCode == 200) {
         var rawdata = body
         var parsed = JSON.parse(rawdata)
+        console.log(parsed.Services[1].NextBus)
+        console.log(busNo)
         for(var i = 0; i < parsed.length-1; i++)  {
-          
+          if(parsed.Services[i].ServiceNo == busNo) {
+            var busTime1 = parsed.Services[i].NextBus.EstimatedArrival  
+          }
         }
+        msg.reply(`next bus at ${busTime1}`)
       }
     }
     request(options, callback);
-    console.log(bus_data)
-   function busArrivalTime(buscode, busNo, bus_data) {
-      for(var i = 0; i < bus_data.length-1; i++) {
-        if(bus_data.Services[i].ServiceNo == busNo) {
-          var busTime1 = bus_data.Services[i].NextBus.EstimatedArrival
-          }
-      }
-     return busTime1
-   }
-    var next_bus = busArrivalTime(busStop, busNo, bus_data)
-   msg.reply(`next bus at ${next_bus}`)
   }
 }
