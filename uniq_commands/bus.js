@@ -18,11 +18,8 @@ function callback(error, response, body) {
     var rawdata = body
     var parsed = JSON.parse(rawdata)
     var keysArray = Object.keys(parsed);
-    for (var i = 0; i < keysArray.length; i++) {
-      var key = keysArray[i]; // here is "name" of object property
-     var value = parsed[key]; // here get value "by name" as it expected with objects
-   console.log(key, value);
-  }
+    console.log(keysArray.Services[1].Nextbus)
+    
 }
 }
 request(options, callback);
