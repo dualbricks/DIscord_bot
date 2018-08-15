@@ -17,11 +17,10 @@ function callback(error, response, body) {
   if (!error && response.statusCode == 200) {
     var rawdata = body
     var parsed = JSON.parse(rawdata)
-    var keysArray = Object.keys(parsed);
-   console.log(body)
+    return parsed
   }
 }
-request(options, callback);
+ var bus_data = request(options, callback);
   
 }
 }
