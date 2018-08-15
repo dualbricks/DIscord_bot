@@ -21,7 +21,9 @@ module.exports = {
       if (!error && response.statusCode == 200) {
         var rawdata = body
         var parsed = JSON.parse(rawdata)
+        for(var i = 0; i < parsed.length-1; i++)  {
           
+        }
       }
     }
     request(options, callback);
