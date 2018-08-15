@@ -18,7 +18,7 @@ function callback(error, response, body) {
     var rawdata = body
     var parsed = JSON.parse(rawdata)
     var keysArray = Object.keys(parsed);
-    console.log(keysArray.Services[1].Nextbus)
+    console.log(parsed.Services[1])
     
 }
 }
