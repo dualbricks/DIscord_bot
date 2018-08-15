@@ -15,7 +15,7 @@ module.exports = {
 
 function callback(error, response, body) {
   if (!error && response.statusCode == 200) {
-    var rawdata = body
+    var rawdata = body.Services
     var parsed = JSON.parse(rawdata)
     
     console.log(parsed);
