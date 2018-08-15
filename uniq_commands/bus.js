@@ -18,7 +18,9 @@ function callback(error, response, body) {
     var rawdata = body
     var parsed = JSON.parse(rawdata)
     var keysArray = Object.keys(parsed);
-    console.log(parsed.Services[1])
+    for(var i = 2; i < parsed.Services.length; i++) {
+      if(parsed.Services[i].ServiceNo == `${busNo}`) {
+        var time1 = parsed.Services[i].ServiceNo.Nextbus.
     
 }
 }
