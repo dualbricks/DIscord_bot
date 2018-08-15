@@ -22,6 +22,7 @@ module.exports = {
       }
     }
    var bus_data = request(options, callback);
+    console.log(bus_data)
    function busArrivalTime(buscode, busNo, bus_data) {
       for(var i = 0; i < bus_data.length-1; i++) {
         if(bus_data.Services[i].ServiceNo == busNo) {
