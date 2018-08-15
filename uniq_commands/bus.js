@@ -29,6 +29,13 @@ module.exports = {
             console.log("pass")
           }
         }
+        
+        
+        var timeNow = new Date()
+        var timeHour = timeNow.geHours()
+        var timeMin = timeNow.getMinutes()
+        var timeSec = timeNow.getSeconds()
+        var timeIRL = ( (timeHour) % (60*60) ) + (timeMin) % 60 + timeSec
         msg.reply(`next bus at ${busTime1}`)
       }
     }
