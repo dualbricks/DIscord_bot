@@ -19,7 +19,7 @@ module.exports = {
             }
             
             if((str1.charAt(0) == "T" || str1.charAt(0) == "S") && (checksum % 11) == check1) {
-                return true ;
+                return true 
             }
             
             else if((str1.charAt(0) == "F" || str1.charAt(0) == "G") && (checksum % 11) ==  check2) {
