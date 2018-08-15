@@ -7,7 +7,7 @@ module.exports = {
     var busNo = msg.content.split(' ')[2]
     var request = require('request');
     var options = {
-      url: 'http://datamall2.mytransport.sg/ltaodataservice/BusArrivalv2?BusStopCode=65191',
+      url: `http://datamall2.mytransport.sg/ltaodataservice/BusArrivalv2?BusStopCode=${busStop}`,
       headers: {
       'accept': 'application/json', 
       'AccountKey': `${process.env.BUS_Key}`,
@@ -23,8 +23,14 @@ module.exports = {
     }
    var bus_data = request(options, callback);
    function busArrivalTime(buscode, busNo, bus_data) {
-      for(var i = 0; i < bus_data.length-1 
-   
+      for(var i = 0; i < bus_data.length-1; i++) {
+        if(bus_data.Services[i].ServiceNo == busNo) {
+          var busTime1 = bus_data.Services[i].NextBus.EstimatedArrival
+          }
+      }
+     return busTime1
    }
+    var next_bus = busArrivalTime(busStop, busNo, bus_data)
+   msg.reply(`next bus at ${next_bus}`)
   }
 }
