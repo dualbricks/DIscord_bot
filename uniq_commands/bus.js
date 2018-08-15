@@ -21,8 +21,7 @@ module.exports = {
       if (!error && response.statusCode == 200) {
         var rawdata = body
         var parsed = JSON.parse(rawdata)
-          bus_data.parsed = parsed;
-          bus_data.emit('update');
+          
       }
     }
     request(options, callback);
