@@ -3,6 +3,9 @@ module.exports = {
   description : 'Bus',
   usage : 'bus busstopcode busNo',
   execute(msg) {
+    var EventEmitter = require("events").EventEmitter;
+    var bus_data = new EventEmitter();
+
     var busStop = msg.content.split(' ')[1]
     var busNo = msg.content.split(' ')[2]
     var request = require('request');
@@ -18,10 +21,11 @@ module.exports = {
       if (!error && response.statusCode == 200) {
         var rawdata = body
         var parsed = JSON.parse(rawdata)
-        return parsed
+          bus_data.parsed = parsed;
+          bus_data.emit('update');
       }
     }
-   var bus_data = request(options, callback);
+    request(options, callback);
     console.log(bus_data)
    function busArrivalTime(buscode, busNo, bus_data) {
       for(var i = 0; i < bus_data.length-1; i++) {
