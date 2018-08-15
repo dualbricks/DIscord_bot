@@ -21,11 +21,12 @@ module.exports = {
       if (!error && response.statusCode == 200) {
         var rawdata = body
         var parsed = JSON.parse(rawdata)
-        console.log(parsed.Services[1].NextBus)
+        console.log(parsed.Services[1].ServiceNo)
         console.log(busNo)
-        for(var i = 0; i < parsed.length-1; i++)  {
+        for(var i = 0; i < parsed.Services.length-1; i++)  {
           if(parsed.Services[i].ServiceNo == busNo) {
-            var busTime1 = parsed.Services[i].NextBus.EstimatedArrival  
+            var busTime1 = parsed.Services[i].NextBus.EstimatedArrival 
+            console.log("pass")
           }
         }
         msg.reply(`next bus at ${busTime1}`)
