@@ -6,7 +6,7 @@ module.exports = {
    var request = require('request');
 
   var options = {
-    url: 'http://datamall2.mytransport.sg/ltaodataservice/BusArrivalv2?BusStopCode=76231',
+    url: 'http://datamall2.mytransport.sg/ltaodataservice/BusArrivalv2?BusStopCode=65191',
     headers: {
       'accept': 'application/json', 
       'AccountKey': `${process.env.BUS_Key}`,
@@ -18,8 +18,9 @@ function callback(error, response, body) {
     var rawdata = body
     var parsed = JSON.parse(rawdata)
     var keysArray = Object.keys(parsed);
-  
+   console.log(body)
   }
+}
 request(options, callback);
   
 }
