@@ -44,14 +44,14 @@ module.exports = {
         var timeIRL = Math.floor((timeHour) * (60*60)) + Math.floor((timeMin) * 60) + Math.floor(timeSec)
         console.log(timeIRL)
         var estimatedTime = busComingSecs - timeIRL
-        var estimatedMin = estimatedTime / 60
+        var estimatedMin = Math.floor(estimatedTime / 60)
         if( estimatedMin <=  0.5) {
           
           estimatedMin = "Arriving"
-          msg.reply(`Next ${busNo} ${estimatedMin}`)
+          msg.reply(`Next bus ,${busNo}, ${estimatedMin}`)
         }
         else {
-          msg.reply(`next ${busNo} in ${estimatedMin} Minutes`)
+          msg.reply(`Next bus,${busNo}, in ${estimatedMin} Minutes`)
                         }               
       }
     }
