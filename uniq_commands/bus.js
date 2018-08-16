@@ -26,11 +26,12 @@ module.exports = {
         for(var i = 0; i < parsed.Services.length-1; i++)  {
           if(parsed.Services[i].ServiceNo == busNo) {
             var busTime1 = parsed.Services[i].NextBus.EstimatedArrival 
-            console.log("pass")
+            console.log("busTime1")
           }
         }
         
-        var time_bus = busTime1.split("T","+")[1]
+        var time_bus = busTime1.split(/[T+]/)[1]
+        console.log(time_bus)
         var busRealHours = time_bus.split(":")
         var busComingSecs = busRealHours[0] * (60*60) + busRealHours[1] * 60 + busRealHours[3]
         var timeNow = new Date()
@@ -39,8 +40,8 @@ module.exports = {
         var timeSec = timeNow.getSeconds()
         var timeIRL = ( (timeHour) * (60*60) ) + (timeMin) * 60 + timeSec
         var estimatedTime = busComingSecs - timeIRL
-        var estimatedMin = estimated
-        msg.reply(`next bus at ${busTime1}`)
+        var estimatedMin = estimatedTime % 60
+        msg.reply(`next bus at ${estimatedMin}`)
       }
     }
     request(options, callback);
