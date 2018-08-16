@@ -25,7 +25,7 @@ module.exports = {
         for(var i = 0; i < parsed.Services.length-1; i++)  {
           if(parsed.Services[i].ServiceNo == busNo) {
             var busTime1 = parsed.Services[i].NextBus.EstimatedArrival 
-
+            console.log(busTime1)
           }
         }
         
