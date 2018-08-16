@@ -20,3 +20,4 @@ With help of fogcreek
 -------------------
 
 \ ゜o゜)ノ
+[Contains information from  accessed on {date of access of dataset} from {source of data} which is made available under the terms of the Singapore Open Data Licence version 1.0 {URL link to licence}]
