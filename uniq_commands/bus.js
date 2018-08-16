@@ -33,14 +33,17 @@ module.exports = {
         var time_bus = busTime1.split(/[T+]/)[1]
         console.log(time_bus)
         var busRealHours = time_bus.split(":")
-        var busComingSecs = busRealHours[0] * (60*60) + busRealHours[1] * 60 + busRealHours[3]
+        var busComingSecs = Math.floor(busRealHours[0] * (60*60)) + Math.floor(busRealHours[1] * 60) + Math.floor(busRealHours[3])
+        console.log(busComingSecs)
         var timeNow = new Date()
-        var timeHour = timeNow.geHours()
+        var timeHour = timeNow.getHours()
+        console.log(timeHour)
         var timeMin = timeNow.getMinutes()
         var timeSec = timeNow.getSeconds()
-        var timeIRL = ( (timeHour) * (60*60) ) + (timeMin) * 60 + timeSec
+        var timeIRL = Math.floor((timeHour) * (60*60)) + Math.floor((timeMin) * 60) + Math.floor(timeSec)
+        console.log(timeIRL)
         var estimatedTime = busComingSecs - timeIRL
-        var estimatedMin = estimatedTime % 60
+        var estimatedMin = Math.floor(estimatedTime % 60)
         msg.reply(`next bus at ${estimatedMin}`)
       }
     }
