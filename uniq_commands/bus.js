@@ -51,10 +51,10 @@ module.exports = {
         if( estimatedMin <=  0.5) {
           
           estimatedMin = "Arriving"
-          msg.reply(`Next bus ,${busNo}, ${estimatedMin}`)
+          msg.reply(`Next bus, ${busNo}, ${estimatedMin}`)
         }
         else {
-          msg.reply(`Next bus,${busNo}, in ${estimatedMin} Minutes`)
+          msg.reply(`Next bus, ${busNo}, in ${estimatedMin} Minutes`)
                         }               
       }
     }
