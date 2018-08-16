@@ -102,8 +102,9 @@ bot.on('message', msg => {
         else if(upcase.startsWith('bus')) {
           bot.uniq_commands.get('bus').execute(msg)
         }
-        else if(upcase == 'busstop') {
-          bot.uniq_commands.get('busstop'.exe
+        else if(upcase == 'stop') {
+          bot.uniq_commands.get('busstop').execute(msg)
+        }                      
     };
 
     if(msg.author.bot) return;
