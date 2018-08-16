@@ -33,10 +33,10 @@ module.exports = {
         console.log(time_bus)
         var busRealHours = time_bus.split(":")
         var busComingSecs = Math.floor(busRealHours[0] * (60*60)) + Math.floor(busRealHours[1] * 60) + Math.floor(busRealHours[2])
-        consols.log(busComingSecs)
+        console.log(busComingSecs)
         var timeNow = new Date()
         var timeHour = timeNow.getHours() + 8
-        console.log(timeHours)
+        console.log(timeHour)
         var timeMin = timeNow.getMinutes()
     
         var timeSec = timeNow.getSeconds()
@@ -44,7 +44,11 @@ module.exports = {
         var timeIRL = Math.floor((timeHour) * (60*60)) + Math.floor((timeMin) * 60) + Math.floor(timeSec)
         console.log(timeIRL)
         var estimatedTime = busComingSecs - timeIRL
-        var estimatedMin = Math.floor(estimatedTime % 60)
+        var estimatedMin = estimatedTime / 60
+        if( estimatedMin >= 0) {
+          
+          estimatedMin = "Arriving"
+        }
         msg.reply(`next bus at ${estimatedMin}`)
       }
     }
