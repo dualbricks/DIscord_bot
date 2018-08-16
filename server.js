@@ -103,7 +103,7 @@ bot.on('message', msg => {
           bot.uniq_commands.get('bus').execute(msg)
         }
         else if(upcase == 'stop') {
-          bot.uniq_commands.get('busstop').execute(msg)
+          bot.uniq_commands.get('stop').execute(msg)
         }                      
     };
 
