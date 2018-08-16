@@ -28,7 +28,10 @@ module.exports = {
             console.log(busTime1)
           }
         }
-        
+        if(busTime1 == null) {
+          msg.reply("No such info at this time! please try again later")
+          return;
+        }
         var time_bus = busTime1.split(/[T+]/)[1]
         console.log(time_bus)
         var busRealHours = time_bus.split(":")
