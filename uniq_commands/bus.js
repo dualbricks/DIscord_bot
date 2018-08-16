@@ -55,7 +55,7 @@ module.exports = {
         }
         else {
           msg.reply(`Next bus, ${busNo}, in ${estimatedMin} Minutes`)
-                        }               
+            }               
       }
     }
     request(options, callback);
