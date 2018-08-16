@@ -34,7 +34,7 @@ module.exports = {
         var busRealHours = time_bus.split(":")
         var busComingSecs = Math.floor(busRealHours[0] * (60*60)) + Math.floor(busRealHours[1] * 60) + Math.floor(busRealHours[2])
         console.log(busComingSecs)
-        var timeNow = new Date()
+        var timeNow = new Date().getTimezoneOffset(-480)
         console.log(timeNow)
         var timeHour = timeNow.getHours()
         console.log(timeHour)
