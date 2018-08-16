@@ -21,25 +21,27 @@ module.exports = {
       if (!error && response.statusCode == 200) {
         var rawdata = body
         var parsed = JSON.parse(rawdata)
-        console.log(parsed.Services[1].ServiceNo)
-        console.log(busNo)
+
         for(var i = 0; i < parsed.Services.length-1; i++)  {
           if(parsed.Services[i].ServiceNo == busNo) {
             var busTime1 = parsed.Services[i].NextBus.EstimatedArrival 
-            console.log("busTime1")
+
           }
         }
         
         var time_bus = busTime1.split(/[T+]/)[1]
         console.log(time_bus)
         var busRealHours = time_bus.split(":")
-        var busComingSecs = Math.floor(busRealHours[0] * (60*60)) + Math.floor(busRealHours[1] * 60) + Math.floor(busRealHours[3])
+        var busComingSecs = Math.floor(busRealHours[0] * (60*60)) + Math.floor(busRealHours[1] * 60) + Math.floor(busRealHours[2])
         console.log(busComingSecs)
         var timeNow = new Date()
+        console.log(timeNow)
         var timeHour = timeNow.getHours()
         console.log(timeHour)
         var timeMin = timeNow.getMinutes()
+        console.log(timeMin)
         var timeSec = timeNow.getSeconds()
+        console.log(timeSec)
         var timeIRL = Math.floor((timeHour) * (60*60)) + Math.floor((timeMin) * 60) + Math.floor(timeSec)
         console.log(timeIRL)
         var estimatedTime = busComingSecs - timeIRL
