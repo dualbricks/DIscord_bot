@@ -37,6 +37,9 @@ module.exports = {
         var timeNow = new Date()
         var timeHour = timeNow.getHours() + 8
         console.log(timeHour)
+        if(timeHour >= 24) {
+          timeHour = timeHour - 24
+        }
         var timeMin = timeNow.getMinutes()
     
         var timeSec = timeNow.getSeconds()
