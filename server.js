@@ -126,17 +126,8 @@ bot.on('message', msg => {
 });
 
 // Music bot 
-Music.start(bot, {
-  youtubeKey : `${process.env.YOUtube_api}`,
-  enableQueueStat: true,
-})
-const failureNote = bot.music.note("fail", "That thing you just did failed!"); // musicbot.note() function.
-// failureNote will equal: ':no_entry_sign: | That thing you just did failed!'
 
-// Change the YouTube key provided at Music.start()
-bot.music.changeKey("YouTubeApiKeyString").then((res) => {
-  // Will resolve with the new <musicbot> object.
-}).catch(console.error); // Errors if no key or the tyeof the key isn't a string.
+
 
 
 bot.on('ready', () => {
