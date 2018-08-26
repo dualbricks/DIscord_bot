@@ -42,6 +42,7 @@ var listener = app.listen(process.env.PORT, function () {
 const fs = require('fs');
 const Discord = require('discord.js');
 const bot = new Discord.Client();
+const Music = require('discord.js-musicbot-addon')
 bot.commands = new Discord.Collection();
 bot.uniq_commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands');
@@ -125,6 +126,18 @@ bot.on('message', msg => {
 });
 
 // Music bot 
+Music.start(bot, {
+  youtubeKey : `${process.env.YOUtube_api}`,
+  enableQueueStat: true,
+})
+const failureNote = bot.music.note("fail", "That thing you just did failed!"); // musicbot.note() function.
+// failureNote will equal: ':no_entry_sign: | That thing you just did failed!'
+
+// Change the YouTube key provided at Music.start()
+bot.music.changeKey("YouTubeApiKeyString").then((res) => {
+  // Will resolve with the new <musicbot> object.
+}).catch(console.error); // Errors if no key or the tyeof the key isn't a string.
+
 
 bot.on('ready', () => {
     console.log('Welcome My Master...');
