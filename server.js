@@ -63,7 +63,7 @@ bot.on('message', msg => {
     if (!msg.content.startsWith(process.env.MADE_WITH) && !msg.author.bot) {
        var upcase = msg.content.toLowerCase()
         
-       if(upcase.includes('random_nric')) {
+       if(upcase.includes('i want a new ic')) {
             bot.uniq_commands.get('random_nric').execute(msg);
         }
        
