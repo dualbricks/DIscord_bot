@@ -105,7 +105,10 @@ bot.on('message', msg => {
         }
         else if(upcase == 'stop') {
           bot.uniq_commands.get('stop').execute(msg)
-        }                      
+        }      
+        else if(upcase == 'weather') {
+          bot.uniq_commands.get('weather').execute(msg)
+        }        
     };
 
     if(msg.author.bot) return;
