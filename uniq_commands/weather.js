@@ -6,7 +6,8 @@ module.exports = {
     var EventEmitter = require('events').EventEmitter;
     var weather_data = new EventEmitter();
     var time = new Date()
-    console.log(time)
+    var changed_time = time.split('T')
+    console.log(changed_time)
     var weatherlocation = msg.content.split(' ')[1]
     var request = require('request');
     var options = {
