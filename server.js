@@ -32,6 +32,7 @@ var dreams = [
   "Climb a really tall mountain",
   "Wash the dishes",
   "A For A Levels",
+  "i will be the special one for wenyue, no curse🙈",
 ];
 
 // listen for requests :)
