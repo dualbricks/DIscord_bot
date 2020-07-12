@@ -33,6 +33,7 @@ var dreams = [
   "Wash the dishes",
   "A For A Levels",
   "i will be the special one for wenyue, no curse🙈",
+  "make Chenxin the happiest girl alive 👌",
 ];
 
 // listen for requests :)
