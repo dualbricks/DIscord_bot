@@ -11,9 +11,7 @@ module.exports = {
     };
     const axios = require("axios");
     async function getRequest() {
-      let data = await axios.get(options.url);
-      msg.reply(`bitcoin price is${options.url}`);
-      msg.reply(`bitcoin price is ${data.bitcoin}`);
+      let data = await axios.get(options);
       msg.reply(`bitcoin price is ${data.bitcoin.usd}`);
     }
     getRequest();
