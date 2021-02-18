@@ -9,15 +9,12 @@ module.exports = {
         accept: "application/json"
       }
     };
-    var request = require("request");
-    function callback(error, response, body) {
-      if (!error && response.statusCode == 200) {
-        var rawdata = body;
-        var parsed = JSON.parse(rawdata);
-
-        msg.reply(`Bitcoin price is ${parsed.bitcoin.usd}`);
-      }
+    const axios = require("axios");
+    async function getRequest() {
+      let data = await axios.get(options.url);
+      msg.reply(`${data}`);
+      msg.reply(`bitcoin price is${data.bitcoin.usd}`);
     }
-     request(options, callback);
+    getRequest();
   }
 };
