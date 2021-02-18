@@ -16,9 +16,8 @@ module.exports = {
         var parsed = JSON.parse(rawdata);
 
         msg.reply(`Bitcoin price is ${parsed.bitcoin.usd}`);
-
-        request(options, callback);
       }
     }
+     request(options, callback);
   }
 };
