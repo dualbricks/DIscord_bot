@@ -110,7 +110,10 @@ bot.on('message', msg => {
         }      
         else if(upcase == 'weather') {
           bot.uniq_commands.get('weather').execute(msg)
-        }        
+        }
+        else if(upcase == 'bitcoin price') {
+          bot.uniq_commands.get('bitcoin').execute(msg)
+        }
     };
 
     if(msg.author.bot) return;
