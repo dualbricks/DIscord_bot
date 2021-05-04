@@ -7,7 +7,13 @@ module.exports = {
       var P = new Pokedex;
       var random_poke = Math.floor(Math.random() * 248);
       
-      P.getPokemonById(random_poke).then()
+      P.getPokemonById(random_poke)
+        .then(function(response) {
+        console.log(response);
+      })
+        .catch(function(error) {
+        console.log('There was an ERROR: ', error);
+      });
         
       
         
