@@ -9,7 +9,8 @@
       "growlithe",
       "seaking",
       "caterpie",
-      "croconaw"
+      "croconaw",
+      "farfetchd"
     ],
     "img_pokemon": [
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
@@ -20,9 +21,10 @@
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png",
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png",
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/159.png"
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/159.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png"
     ],
-    "total_number": 9
+    "total_number": 10
   },
   "750366151569178714": {
     "pokemons_caught": [
