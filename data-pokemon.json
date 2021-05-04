@@ -1,7 +1,11 @@
 {
   "315430130056953861": {
-    "pokemons_caught": [],
-    "img_pokemon": [],
-    "total_number": 0 
+    "pokemons_caught": [
+      "pikachu"
+    ],
+    "img_pokemon": [
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+    ],
+    "total_number": 1
   }
 }
