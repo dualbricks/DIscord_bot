@@ -19,24 +19,22 @@ module.exports = {
           .setFooter(`congrats you have caught ${name}`);
         msg.reply(pokemon_caught);
         const fs = require('fs') //importing file save
-        var xpPath = './data-pokemon.JSON'
+        var xpPath = './data-pokemon.json'
         var xpRead = fs.readFileSync(xpPath);
         var xpFile = JSON.parse(xpRead); //ready for use
         var userId = msg.author.id //user id here
         
         if (!xpFile[userId]) { //this checks if data for the user has already been created
-        xpFile[userId] = {pokemons_caught:{} , img: {}, total_number: 0}; 
+        xpFile[userId] = {pokemons_caught:{} , img_pokemon: {}, total_number: 0}; 
         fs.writeFileSync(xpPath, JSON.stringify(xpFile, null, 2));
         }  
         
         else {
-              var xppVar = Number(xpFile.total_number) + 1;
-              
-              var roleToGive = "Awesome Role"
-              xpFile[userId] = {xpp: xppVar, xppr: xpprVar, currentRole: roleToGive};
+              var number_pokemon = Number(xpFile.total_number) + 1;
+              var name_pokemon = xpFile.pokemons_caught.push(name);
+              var img_pokemon = xpFile.img_pokemon.push(img);
+              xpFile[userId] = {pokemons_caught: name_pokemon, img_pokemon: img_pokemon, total_number: number_pokemon};
               fs.writeFileSync(xpPath, JSON.stringify(xpFile, null, 2));
-          
-
         }
                          
         
