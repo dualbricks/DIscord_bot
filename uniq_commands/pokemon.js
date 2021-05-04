@@ -32,8 +32,10 @@ module.exports = {
         
         else {
               var number_pokemon = Number(xpFile.total_number) + 1;
-              var name_pokemon = xpFile.pokemons_caught.push(name);
-              var image_pokemon = xpFile.img_pokemon.push(img);
+              var name_pokemon = xpFile.pokemons_caught
+              var final_name= name_pokemon.push(name);
+              var image_pokemon = xpFile.img_pokemon;
+              var final_img = image_pokemon.push(img);
               xpFile[userId] = {pokemons_caught: name_pokemon, img_pokemon: image_pokemon, total_number: number_pokemon};
               fs.writeFileSync(xpPath, JSON.stringify(xpFile, null, 2));
               console.log("success")
