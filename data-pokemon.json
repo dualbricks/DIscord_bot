@@ -6,7 +6,9 @@
       "clefable",
       "granbull",
       "goldeen",
-      "growlithe"
+      "growlithe",
+      "seaking",
+      "caterpie"
     ],
     "img_pokemon": [
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
@@ -14,9 +16,11 @@
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png",
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/210.png",
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png",
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png"
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png"
     ],
-    "total_number": 5
+    "total_number": 8
   },
   "750366151569178714": {
     "pokemons_caught": [
