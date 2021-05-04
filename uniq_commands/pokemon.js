@@ -13,12 +13,17 @@ module.exports = {
         .then(function(response) {
         var img = response.sprites.front_default
         console.log(img);
+        pokemon_caught.setImage(img)
+          .setTitle("Pokemon caught")
+          .setFooter("Congrats");
+        msg.reply(pokemon_caught);
+                         
+        
       })
         .catch(function(error) {
         console.log('There was an ERROR: ', error);
       });
        
-      const file = new Discord.MessageAttachment(`sa`)
         
     }
 }
