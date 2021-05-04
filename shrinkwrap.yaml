@@ -2,7 +2,6 @@ dependencies:
   discord.js: 12.5.3
   express: 4.17.1
   opusscript: 0.0.3
-  poke-api.js: 2.0.0
   pokedex-promise-v2: 3.3.0
   request: 2.88.2
 packages:
@@ -559,14 +558,6 @@ packages:
     dev: false
     resolution:
       integrity: sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
-  /poke-api.js/2.0.0:
-    dependencies:
-      snekfetch: 3.6.4
-    dev: false
-    engines:
-      node: 8.4.0
-    resolution:
-      integrity: sha512-IQZwl1qzFbRecx8I4oVEA0LpzJA2RBwBYjr3A5HhxFprem4OeEqisek5KWBLTA22eITaAlGyX2EisBun240T7Q==
   /pokedex-promise-v2/3.3.0:
     dependencies:
       axios: 0.21.1
@@ -713,11 +704,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-JvdAWfbXeIGaZ9cILp38HntZSFSo3mWg6xGcJJsd+d4aRMOqauag1C63dJfDw7OaMYwEbHMOxEZ1lqVRYP2OAw==
-  /snekfetch/3.6.4:
-    deprecated: use node-fetch instead
-    dev: false
-    resolution:
-      integrity: sha512-NjxjITIj04Ffqid5lqr7XdgwM7X61c/Dns073Ly170bPQHLm6jkmelye/eglS++1nfTWktpP6Y2bFXjdPlQqdw==
   /sshpk/1.16.1:
     dependencies:
       asn1: 0.2.4
@@ -834,6 +820,5 @@ specifiers:
   discord.js: ^12.5.2
   express: ^4.16.2
   opusscript: 0.0.3
-  poke-api.js: ^2.0.0
   pokedex-promise-v2: ^3.3.0
   request: ''
