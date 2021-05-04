@@ -13,12 +13,10 @@ module.exports = {
     pokemon_details.setTitle(`POKEMONS CAUGHT: total ${xpFile[name].total_number}`).setDescription("catch them all")
     console.log(xpFile[name].img_pokemon);
     console.log(xpFile[name].img_pokemon[1]);
-    
-    
-    var string_names = String(xpFile[name].pokemons_caught[i])
-    
     for(var i = 0; i < xpFile[name].total_number -1;i++) {
-      pokemon_details.addField({name:string_names, value:xpFile[name].img_pokemon[i]});
+      pokemon_details.addField(
+        `${xpFile[name].pokemons_caught[i]}`, `${xpFile[name].img_pokemon[i]}`
+      );
     }
     
     msg.reply(pokemon_details)
