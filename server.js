@@ -69,14 +69,8 @@ bot.on('message', msg => {
             bot.uniq_commands.get('random_nric').execute(msg);
         }
        
-        else if(upcase.includes('p.pokemon')) {
-          var pokebot = bot.users.get('365975655608745985')
-          if(pokebot.presence.status == 'online') {
-            bot.uniq_commands.get('p.pokemon').execute(msg);
-          }
-          else {
-            msg.reply('Sorry Pokebot is Offline!! please try again later!!')
-          }
+        else if(upcase.includes('pokemon!')) {
+          bot.uniq_commands.get('p.pokemon').execute(msg)
         }
         
         else if(upcase.includes('legit') && upcase.includes('is')) {
