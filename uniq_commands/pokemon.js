@@ -1,49 +1,50 @@
 module.exports = {
-    name: 'p.pokemon',
-    description: 'pokemon bot',
-    usage: 'pokemon!',
-    execute(msg) {
-      const Discord = require('discord.js');
-      const pokemon_caught = new Discord.MessageEmbed();
-      var Pokedex = require('pokedex-promise-v2');
-      var P = new Pokedex();
-      var random_poke = Math.floor(Math.random() * 248);
-      
-      P.getPokemonByName(`${random_poke}`)
-        .then(function(response) {
+  name: "p.pokemon",
+  description: "pokemon bot",
+  usage: "pokemon!",
+  execute(msg) {
+    const Discord = require("discord.js");
+    const pokemon_caught = new Discord.MessageEmbed();
+    var Pokedex = require("pokedex-promise-v2");
+    var P = new Pokedex();
+    var random_poke = Math.floor(Math.random() * 248);
+
+    P.getPokemonByName(`${random_poke}`)
+      .then(function(response) {
         var name = response.name;
-        var img = response.sprites.front_default
-        console.log(img);
-        pokemon_caught.setImage(img)
+        var img = response.sprites.front_default;
+        pokemon_caught
+          .setImage(img)
           .setTitle("Pokemon caught")
           .setFooter(`congrats you have caught ${name}`);
         msg.reply(pokemon_caught);
-        const fs = require('fs') //importing file save
-        var xpPath = './data-pokemon.json'
+        const fs = require("fs"); //importing file save
+        var xpPath = "./data-pokemon.json";
         var xpRead = fs.readFileSync(xpPath);
         var xpFile = JSON.parse(xpRead); //ready for use
-        var userId = msg.author.id //user id here
-        
-        if (!xpFile[userId]) { //this checks if data for the user has already been created
-        xpFile[userId] = {pokemons_caught:[name] , img_pokemon:[img], total_number: 1}; 
-        fs.writeFileSync(xpPath, JSON.stringify(xpFile, null, 2));
-        console.log("whyyy");
-        }  
-        
-        else {
-              var number_pokemon = Number(xpFile.userid.total_number) + 1;
-              var name_pokemon = xpFile.userid.pokemons_caught.push(name);
-              var image_pokemon = xpFile.userid.img_pokemon.push(img);
-              fs.writeFileSync(xpPath, JSON.stringify(xpFile, null, 2));
-              console.log("success")
+        var userId = msg.author.id; //user id here
+
+        if (!xpFile[userId]) {
+          //this checks if data for the user has already been created
+          xpFile[userId] = {
+            pokemons_caught: [name],
+            img_pokemon: [img],
+            total_number: 1
+          };
+          fs.writeFileSync(xpPath, JSON.stringify(xpFile, null, 2));
+          console.log("whyyy");
+        } else {
+           console.log(xpFile.userid.total_number);
+           console.log(xpFile.total_number);
+           xpFile.userid.total_number + 1;
+           xpFile.userid.pokemons_caught.push(name);
+           xpFile.userid.img_pokemon.push(img);
+          fs.writeFileSync(xpPath, JSON.stringify(xpFile, null, 2));
+          console.log("success");
         }
-                         
-        
       })
-        .catch(function(error) {
-        console.log('There was an ERROR: ', error);
+      .catch(function(error) {
+        console.log("There was an ERROR: ", error);
       });
-       
-        
-    }
-}
+  }
+};

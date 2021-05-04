@@ -68,7 +68,7 @@ bot.on('message', msg => {
             bot.uniq_commands.get('random_nric').execute(msg);
         }
        
-        else if(upcase.includes('pokemon!')) {
+        else if(upcase.includes('pokemon!') || upcase.includes('pokémon!')) {
           bot.uniq_commands.get('p.pokemon').execute(msg)
         }
         
