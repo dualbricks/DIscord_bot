@@ -71,7 +71,11 @@ bot.on('message', msg => {
         else if(upcase.includes('pokemon!') || upcase.includes('pokémon!')) {
           bot.uniq_commands.get('p.pokemon').execute(msg)
         }
-        
+      
+        else if(upcase.includes('details!') ) {
+          bot.uniq_commands.get('details').execute(msg)
+        }
+      
         else if(upcase.includes('legit') && upcase.includes('is')) {
             bot.uniq_commands.get('legit').execute(msg)
         }
