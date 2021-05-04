@@ -34,8 +34,7 @@ module.exports = {
           fs.writeFileSync(xpPath, JSON.stringify(xpFile, null, 2));
           console.log("whyyy");
         } else {
-           console.log(xpFile.userid.total_number);
-           console.log(xpFile.total_number);
+           console.log(xpFile.userid);
            xpFile.userid.total_number + 1;
            xpFile.userid.pokemons_caught.push(name);
            xpFile.userid.img_pokemon.push(img);
