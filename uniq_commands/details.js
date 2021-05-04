@@ -11,8 +11,14 @@ module.exports = {
     var xpFile = JSON.parse(xpRead);
     var name = msg.author.id;
     pokemon_details.setTitle("POKEMONS CAUGHT:").setDescription("catch them all")
+    console.log(xpFile[name]);
+    if (xpFile[name].pokemons_caught[1] == "a") {
+      console.log(xpFile[name].pokemons_caught[1]);
+    }
+    
+    ``
     for(var i = 0; i < xpFile[name].total_number -1;i++) {
-      pokemon_details.setField({name:xpFile[name].pokemons_caught[i], value:xpFile[name].img_pokemon[i]});
+      pokemon_details.addField({name:String(xpFile[name].pokemons_caught[i]), value:xpFile[name].img_pokemon[i]});
     }
     
     msg.reply(pokemon_details)

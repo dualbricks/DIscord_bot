@@ -8,7 +8,8 @@
       "goldeen",
       "growlithe",
       "seaking",
-      "caterpie"
+      "caterpie",
+      "croconaw"
     ],
     "img_pokemon": [
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
@@ -18,9 +19,10 @@
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png",
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png",
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png",
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png"
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/159.png"
     ],
-    "total_number": 8
+    "total_number": 9
   },
   "750366151569178714": {
     "pokemons_caught": [
