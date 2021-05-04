@@ -34,12 +34,10 @@ module.exports = {
           fs.writeFileSync(xpPath, JSON.stringify(xpFile, null, 2));
           console.log("whyyy");
         } else {
-           var username = `'${userId.toString()}'`;
-           
-           console.log(xpFile.username);          
-           xpFile.username.total_number + 1;
-           xpFile.username.pokemons_caught.push(name);
-           xpFile.username.img_pokemon.push(img);
+            
+           Number(xpFile[userId].total_number) + 1;
+           xpFile[userId].pokemons_caught.push(name);
+           xpFile[userId].img_pokemon.push(img);
           fs.writeFileSync(xpPath, JSON.stringify(xpFile, null, 2));
           console.log("success");
         }
