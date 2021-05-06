@@ -62,7 +62,6 @@ for(const file of uniq_commandsFiles) {
 
 bot.on('message', msg => {
   
-       var cp = re
        if (!msg.content.startsWith(process.env.MADE_WITH) && !msg.author.bot) {
        var upcase = msg.content.toLowerCase()
         

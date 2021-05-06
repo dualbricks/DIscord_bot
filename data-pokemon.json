@@ -10,7 +10,8 @@
       "seaking",
       "caterpie",
       "croconaw",
-      "farfetchd"
+      "farfetchd",
+      "furret"
     ],
     "img_pokemon": [
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
@@ -22,9 +23,10 @@
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png",
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/159.png",
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png"
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/162.png"
     ],
-    "total_number": 10
+    "total_number": 11
   },
   "750366151569178714": {
     "pokemons_caught": [
