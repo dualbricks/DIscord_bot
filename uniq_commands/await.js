@@ -7,17 +7,11 @@ module.exports = {
     var playerName = "";
     var running = true;
     var arrayhehe = [];
-    while (running) {
-      let filter = x => !msg.author.bot && !msg.content.startsWith("!");
-      let collector = new Discord.MessageCollector(msg.channel, filter);
+    let filter = x => !msg.author.bot && !msg.content.startsWith("!");
+    let collector = new Discord.MessageCollector(msg.channel, filter);
+    function comeOn() {
       msg.channel.send("Bot is collecting now");
-      collector.on("collect", msg => {
-        if (msg.content == "!stop") {
-          collector.stop();
-          running = false;
-          return;
-        }
-      });
+      collector.on("collect", msg => {});
       collector.on("end", async (collectedItem, reason) => {
         function isDone() {
           if (playerName != null) {
@@ -38,5 +32,9 @@ module.exports = {
         console.log(contentArray);
       });
     }
+    
+    
+    
+    
   }
 };
