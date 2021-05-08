@@ -3,12 +3,11 @@ module.exports = {
   description: "collect",
   usage: " collect",
   execute(msg) {
-    const Discord = require("discord.js");
     var playerName = "";
     var running = true;
     var arrayhehe = [];
-    let filter = x => !msg.author.bot && !msg.content.startsWith("!");
-    let collector = new Discord.MessageCollector(msg.channel, filter);
+    let filter = x => !msg.author.bot && msg.content.startsWith("$");
+    const collector = msg.channel.createMessageCollector(filter);
     function comeOn() {
       msg.channel.send("Bot is collecting now");
       collector.on("collect", msg => {
