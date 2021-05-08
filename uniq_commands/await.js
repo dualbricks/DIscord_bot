@@ -11,7 +11,9 @@ module.exports = {
     let collector = new Discord.MessageCollector(msg.channel, filter);
     function comeOn() {
       msg.channel.send("Bot is collecting now");
-      collector.on("collect", msg => {});
+      collector.on("collect", msg => {
+        console.log(msg.content + "collected");
+      });
       collector.on("end", async (collectedItem, reason) => {
         function isDone() {
           if (playerName != null) {
@@ -33,6 +35,7 @@ module.exports = {
       });
     }
     
+    comeOn();
     
     
     
