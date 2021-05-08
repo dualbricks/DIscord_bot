@@ -3,13 +3,16 @@ module.exports = {
   description: "collect",
   usage: " collect",
   execute(msg) {
-    const filter = m => m.content.startWith('$');
-    const collector = msg.channel.createMessageCollector(filter);
+    const filter = m => m.content.startsWith('$');
+    const collector = msg.channel.createMessageCollector(filter, {time: 1000000});
     
     collector.on('collect', m => {
       console.log(m.content);
-      channel.send("collect")
-    })
+      msg.channel.send("collected")
+    });
     
+    collector.on('end', collecteditems => {
+      console.log(collecteditems.size);
+    });
   }
 };
