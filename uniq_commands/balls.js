@@ -31,7 +31,7 @@ module.exports = {
               console.log("whyyy");
             } else {
               if(!xpFile[userId].balls) {
-                xpFile[userId].balls = { name_ball: number};
+                xpFile[userId].balls = `{ ${name_ball}: ${number}}`;
               }
               else {
                 xpFile[userId].balls.name_ball + number;
