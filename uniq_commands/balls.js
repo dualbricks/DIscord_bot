@@ -14,6 +14,7 @@ module.exports = {
         var random = Math.floor(Math.random() * 6);
         P.getItemByName(response.items[random].name)
           .then(function(response2) {
+          var name_ball = response2.name;
             balls_got
               .setTitle(`congrats you got ${number} ${response2.name}`)
               .setImage(response2.sprites.default);
@@ -24,13 +25,13 @@ module.exports = {
             if (!xpFile[userId]) {
               //this checks if data for the user has already been created
               xpFile[userId] = {
-                balls : {name: response2.name, num: number}
+                balls :  {name_ball : number}
               };
               fs.writeFileSync(xpPath, JSON.stringify(xpFile, null, 2));
               console.log("whyyy");
             } else {
               if(xpFile[userId].balls.response2.name == null) {
-                xpFile[userId].balls = {name: response2.name, num: number};
+                xpFile[userId].balls = { : number};
               }
               else {
                 xpFile[userId].balls.response2.name.num + number;
