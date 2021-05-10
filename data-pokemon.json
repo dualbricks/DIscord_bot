@@ -11,7 +11,10 @@
       "caterpie",
       "croconaw",
       "farfetchd",
-      "furret"
+      "furret",
+      "articuno",
+      "slowpoke",
+      "ditto"
     ],
     "img_pokemon": [
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
@@ -24,9 +27,12 @@
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/159.png",
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png",
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/162.png"
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/162.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
     ],
-    "total_number": 11,
+    "total_number": 14,
     "balls": [
       "{ poke-ball: 2}"
     ]
@@ -39,5 +45,8 @@
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png"
     ],
     "total_number": 1
+  },
+  "280510218046144513": {
+    "balls": {}
   }
 }
