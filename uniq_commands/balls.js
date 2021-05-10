@@ -25,7 +25,7 @@ module.exports = {
             if (!xpFile[userId]) {
               //this checks if data for the user has already been created
               xpFile[userId] = {
-                balls: { name_ball: number }
+                balls: {}
               };
               fs.writeFileSync(xpPath, JSON.stringify(xpFile, null, 2));
               console.log("whyyy");
