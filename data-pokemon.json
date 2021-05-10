@@ -26,7 +26,8 @@
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png",
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/162.png"
     ],
-    "total_number": 11
+    "total_number": 11,
+    "balls": "{ poke-ball: 2}"
   },
   "750366151569178714": {
     "pokemons_caught": [
