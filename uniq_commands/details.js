@@ -15,10 +15,10 @@ module.exports = {
     console.log(xpFile[name].img_pokemon[1]);
     for(var i = 0; i < xpFile[name].total_number -1;i++) {
       pokemon_details.addField(
-        `${xpFile[name].pokemons_caught[i]}`, `${xpFile[name].img_pokemon[i]}`
+        `${xpFile[name].pokemons_caught[i]}`, `${xpFile[name].img_pokemon[i]} `
       );
     }
-    
+    pokemon_details.setFooter(`${xpFile[name].balls}`)
     msg.reply(pokemon_details)
   
   }
