@@ -14,7 +14,8 @@
       "furret",
       "articuno",
       "slowpoke",
-      "ditto"
+      "ditto",
+      "psyduck"
     ],
     "img_pokemon": [
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
@@ -30,9 +31,10 @@
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/162.png",
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png",
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png"
     ],
-    "total_number": 14,
+    "total_number": 15,
     "balls": [
       "{ poke-ball: 2}"
     ]
