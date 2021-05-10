@@ -30,12 +30,9 @@ module.exports = {
               fs.writeFileSync(xpPath, JSON.stringify(xpFile, null, 2));
               console.log("whyyy");
             } else {
-              if(!xpFile[userId].balls) {
-                xpFile[userId].balls = `{ ${name_ball}: ${number}}`;
-              }
-              else {
+                xpFile[userId].balls.push(`${name_ball}: ${number}`);
                 xpFile[userId].balls.name_ball + number;
-              }
+              
               fs.writeFileSync(xpPath, JSON.stringify(xpFile, null, 2));
               console.log("success");
             }
