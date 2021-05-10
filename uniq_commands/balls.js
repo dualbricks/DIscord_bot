@@ -12,7 +12,6 @@ module.exports = {
     P.getItemCategoryByName("standard-balls")
       .then(function(response) {
         var random = Math.floor(Math.random() * 6);
-        console.log(response.items);
         P.getItemByName(response.items[random].name)
           .then(function(response2) {
             balls_got
@@ -30,16 +29,19 @@ module.exports = {
               fs.writeFileSync(xpPath, JSON.stringify(xpFile, null, 2));
               console.log("whyyy");
             } else {
-              if(xpFile[userId].balls[response2.name] == null) {
-                xpFile[userId].balls
-              } 
+              if(xpFile[userId].balls == null) {
+                xpFile[userId].balls = {name: response2.name, num: number};
+              }
+              else {
+                xpFile[userId].balls[response2.name].num + number;
+              }
               fs.writeFileSync(xpPath, JSON.stringify(xpFile, null, 2));
               console.log("success");
             }
             msg.reply(balls_got);
           })
           .catch(function(error) {
-            console.log("an error has occurred.");
+            console.log(error);
           });
       })
       .catch(function(error) {
