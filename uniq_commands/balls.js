@@ -22,7 +22,20 @@ module.exports = {
             var xpRead = fs.readFileSync(xpPath);
             var xpFile = JSON.parse(xpRead); //ready for use
             var userId = msg.author.id; //user id here
-
+            if (!xpFile[userId]) {
+              //this checks if data for the user has already been created
+              xpFile[userId] = {
+                balls : {name: response2.name, num: number}
+              };
+              fs.writeFileSync(xpPath, JSON.stringify(xpFile, null, 2));
+              console.log("whyyy");
+            } else {
+              if(xpFile[userId].balls[response2.name] == null) {
+                xpFile[userId].balls
+              } 
+              fs.writeFileSync(xpPath, JSON.stringify(xpFile, null, 2));
+              console.log("success");
+            }
             msg.reply(balls_got);
           })
           .catch(function(error) {
