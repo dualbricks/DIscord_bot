@@ -72,6 +72,9 @@ bot.on('message', msg => {
         else if(upcase.includes('pokemon!') || upcase.includes('pokémon!')) {
           bot.uniq_commands.get('p.pokemon').execute(msg)
         }
+        else if(upcase.includes('!balls')) {
+          bot.uniq_commands.get('balls').execute(msg)
+        } 
         else if(upcase.includes('!collect')) {
           bot.uniq_commands.get('!collect').execute(msg)
         }

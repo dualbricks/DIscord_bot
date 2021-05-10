@@ -5,8 +5,10 @@ module.exports = {
   execute(msg) {
     var Pokedex = require("pokedex-promise-v2");
     var P = new Pokedex();
-    P.getPokemonByName()
-      .then(function(response) {}).catch(function(error) {
+    P.getItemCategoryByName("standard-balls")
+      .then(function(response) {
+      console.log(response.items);
+    }).catch(function(error) {
       console.log('An error has occurred');
     })
     
