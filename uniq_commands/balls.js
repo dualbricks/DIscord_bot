@@ -5,9 +5,9 @@ module.exports = {
   execute(msg) {
     var Pokedex = require("pokedex-promise-v2");
     var P = new Pokedex();
-    P.getPokemonByName(`${random_poke}`)
+    P.getPokemonByName()
       .then(function(response) {}).catch(function(error) {
-      console.
+      console.log('An error has occurred');
     })
     
   }
