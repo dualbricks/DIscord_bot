@@ -29,11 +29,11 @@ module.exports = {
               fs.writeFileSync(xpPath, JSON.stringify(xpFile, null, 2));
               console.log("whyyy");
             } else {
-              if(xpFile[userId].balls == null) {
+              if(xpFile[userId].balls.response2.name == null) {
                 xpFile[userId].balls = {name: response2.name, num: number};
               }
               else {
-                xpFile[userId].balls[response2.name].num + number;
+                xpFile[userId].balls.response2.name.num + number;
               }
               fs.writeFileSync(xpPath, JSON.stringify(xpFile, null, 2));
               console.log("success");

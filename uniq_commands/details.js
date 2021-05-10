@@ -18,7 +18,7 @@ module.exports = {
         `${xpFile[name].pokemons_caught[i]}`, `${xpFile[name].img_pokemon[i]} `
       );
     }
-    pokemon_details.setFooter(`${xpFile[name].balls[0]}`)
+    pokemon_details.setFooter(`${xpFile[name].balls}`)
     msg.reply(pokemon_details)
   
   }
