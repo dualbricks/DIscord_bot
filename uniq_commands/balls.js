@@ -22,22 +22,10 @@ module.exports = {
             var xpRead = fs.readFileSync(xpPath);
             var xpFile = JSON.parse(xpRead); //ready for use
             var userId = msg.author.id; //user id here
-            if (!xpFile[userId]) {
-              //this checks if data for the user has already been created
+            if(!xpFile[userId]) {
               xpFile[userId] = {
-                balls: {}
-              };
-              fs.writeFileSync(xpPath, JSON.stringify(xpFile, null, 2));
-              console.log("whyyy");
-            } else {
-              if (!xpFile[userId].balls[`${name_ball}`]) {
-                xpFile[userId].balls[`${name_ball}`] = number;
-              } else {
-                xpFile[userId].balls[`${name_ball}`] + number;
+                balls : {}
               }
-
-              fs.writeFileSync(xpPath, JSON.stringify(xpFile, null, 2));
-              console.log("success");
             }
             msg.reply(balls_got);
           })
