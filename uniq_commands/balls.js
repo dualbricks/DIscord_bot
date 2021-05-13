@@ -22,10 +22,14 @@ module.exports = {
             var xpRead = fs.readFileSync(xpPath);
             var xpFile = JSON.parse(xpRead); //ready for use
             var userId = msg.author.id; //user id here
-            if(!xpFile[userId]) {
+            if(!xpFile[userId] || xpFile[userId].balls == null) {
               xpFile[userId] = {
-                balls : {}
+                balls : {[response2.name] : [number]}
               }
+            }
+            else {
+              var value = {[response2.name] : [number]}
+              xpFile[userId].balls.push(value)
             }
             msg.reply(balls_got);
           })
