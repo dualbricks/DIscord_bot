@@ -1,40 +1,10 @@
 {
   "315430130056953861": {
-    "pokemons_caught": [
-      "pikachu",
-      "stantler",
-      "clefable",
-      "granbull",
-      "goldeen",
-      "growlithe",
-      "seaking",
-      "caterpie",
-      "croconaw",
-      "farfetchd",
-      "furret",
-      "articuno",
-      "slowpoke",
-      "ditto",
-      "psyduck"
-    ],
-    "img_pokemon": [
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/234.png",
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png",
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/210.png",
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png",
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png",
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png",
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/159.png",
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png",
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/162.png",
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png",
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png"
-    ],
-    "total_number": 15        
+    "balls": {
+      "master-ball": [
+        0
+      ]
+    }
   },
   "750366151569178714": {
     "pokemons_caught": [
