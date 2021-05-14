@@ -11,7 +11,17 @@
       "charmeleon",
       "mew",
       "electrode",
-      "machoke"
+      "machoke",
+      "omastar",
+      "magikarp",
+      "mr-mime",
+      "articuno",
+      "misdreavus",
+      "magmar",
+      "muk",
+      "nidoran-m",
+      "pupitar",
+      "cloyster"
     ],
     "img_pokemon": [
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png",
@@ -24,13 +34,23 @@
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png",
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png"
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/200.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/247.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png"
     ],
-    "total_number": 11,
+    "total_number": 21,
     "balls": {
-      "poke-ball": 4,
-      "master-ball": 4,
-      "safari-ball": 3
+      "poke-ball": 1,
+      "master-ball": 2,
+      "safari-ball": -2
     }
   },
   "750366151569178714": {

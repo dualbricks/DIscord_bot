@@ -45,10 +45,10 @@ module.exports = {
         };
 
         var size_balls = Object.size(userData.balls);
+        var check =
         var random_ball = Math.floor(Math.random() * size_balls);
-        userData.balls[ball_name]--;
-        
         var ball_name = Object.keys(userData.balls)[random_ball];
+        userData.balls[ball_name]--;
         if (!userData.pokemons_caught) {
           //this checks if data for the user has already been created
           userData = {
