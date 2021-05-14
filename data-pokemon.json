@@ -30,7 +30,16 @@
       "ledian",
       "quilava",
       "sandshrew",
-      "wooper"
+      "wooper",
+      "dunsparce",
+      "ledyba",
+      "piloswine",
+      "magneton",
+      "spearow",
+      "metapod",
+      "metapod",
+      "pidgey",
+      "kangaskhan"
     ],
     "img_pokemon": [
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png",
@@ -62,13 +71,23 @@
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/166.png",
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/156.png",
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png",
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/194.png"
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/194.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/206.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/165.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/221.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png"
     ],
-    "total_number": 30,
+    "total_number": 39,
     "balls": {
-      "poke-ball": -8,
-      "master-ball": 2,
-      "safari-ball": 0
+      "poke-ball": 0,
+      "master-ball": 0,
+      "safari-ball": 0,
+      "park-ball": 0
     }
   },
   "750366151569178714": {

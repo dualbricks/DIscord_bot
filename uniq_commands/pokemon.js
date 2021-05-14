@@ -1,6 +1,7 @@
 module.exports = {
   name: "p.pokemon",
   description: "pokemon bot",
+  cooldown: 60,
   usage: "pokemon!",
   execute(msg) {
     const Discord = require("discord.js");
@@ -31,7 +32,7 @@ module.exports = {
         }
         var sum = 0;
         for(let key in userData.balls) {
-          sum += userData.balls
+          sum += userData.balls[key];
         }
         console.log(sum);
         if (sum <= 0) {
@@ -51,7 +52,7 @@ module.exports = {
         var size_balls = Object.size(userData.balls);
         var starting_ball = 0;
         var ball_name = Object.keys(userData.balls)[0];
-        while (userData.balls[ball_name <= 0] && starting_ball < size_balls) {
+        while (userData.balls[ball_name] <= 0 && starting_ball < size_balls) {
           ball_name = Object.keys(userData.balls)[starting_ball++];
         }
 

@@ -1,6 +1,7 @@
 module.exports = {
   name: "balls",
   description: "give you balls",
+  cooldown: 60,
   usage: "!balls",
   execute(msg) {
     const fs = require("fs");
