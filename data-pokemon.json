@@ -3,16 +3,22 @@
     "pokemons_caught": [
       "porygon",
       "suicune",
-      "ninetales"
+      "ninetales",
+      "horsea",
+      "espeon",
+      "slowpoke"
     ],
     "img_pokemon": [
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png",
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/245.png",
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png"
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/196.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png"
     ],
-    "total_number": 3,
+    "total_number": 6,
     "balls": {
-      "0": null,
+      "0": -1,
       "poke-ball": 4,
       "master-ball": 4,
       "safari-ball": 3
