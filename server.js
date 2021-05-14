@@ -66,14 +66,8 @@ bot.on("message", msg => {
 
     if (upcase.includes("i want a new ic")) {
       bot.uniq_commands.get("random_nric").execute(msg);
-    } else if (upcase.includes("!pokemon") || upcase.includes("pokémon!")) {
-      bot.uniq_commands.get("p.pokemon").execute(msg);
-    } else if (upcase.includes("!balls")) {
-      bot.uniq_commands.get("balls").execute(msg);
     } else if (upcase.includes("!collect")) {
       bot.uniq_commands.get("!collect").execute(msg);
-    } else if (upcase.includes("details!")) {
-      bot.uniq_commands.get("details").execute(msg);
     } else if (upcase.includes("legit") && upcase.includes("is")) {
       bot.uniq_commands.get("legit").execute(msg);
     } else if (upcase == "info") {

@@ -1,9 +1,9 @@
 module.exports = {
   name: "p.pokemon",
   description: "pokemon bot",
-  cooldown: 60,
+  cooldown: 6000000,
   usage: "pokemon!",
-  execute(msg) {
+  execute(msg, args) {
     const Discord = require("discord.js");
     const pokemon_caught = new Discord.MessageEmbed();
     var Pokedex = require("pokedex-promise-v2");

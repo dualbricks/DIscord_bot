@@ -2,7 +2,7 @@ module.exports = {
   name: "details",
   description: "pokemon bot",
   usage: "details!",
-  execute(msg) {
+  execute(msg, args) {
     const Discord = require("discord.js");
     const pokemon_details = new Discord.MessageEmbed();
     const fs = require("fs"); //importing file save

@@ -84,10 +84,11 @@
     ],
     "total_number": 39,
     "balls": {
-      "poke-ball": 0,
+      "poke-ball": 4,
       "master-ball": 0,
-      "safari-ball": 0,
-      "park-ball": 0
+      "safari-ball": 2,
+      "park-ball": 8,
+      "ultra-ball": 2
     }
   },
   "750366151569178714": {

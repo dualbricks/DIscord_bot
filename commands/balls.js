@@ -1,9 +1,9 @@
 module.exports = {
   name: "balls",
   description: "give you balls",
-  cooldown: 60,
+  cooldown: 600000,
   usage: "!balls",
-  execute(msg) {
+  execute(msg, args) {
     const fs = require("fs");
     const Discord = require("discord.js");
     var Pokedex = require("pokedex-promise-v2");
