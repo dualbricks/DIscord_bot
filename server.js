@@ -99,18 +99,18 @@ bot.on("message", msg => {
 
   const args = msg.content.slice(process.env.MADE_WITH.length).split(/ +/);
   const command = args.shift().toLowerCase();
-  if (!cooldowns.has(command.name)) {
-    cooldowns.set(command.name, new Discord.Collection());
+  if (!cooldowns.has(bot.commands.get(command).name)) {
+    cooldowns.set(command, new Discord.Collection());
   }
   const now = Date.now();
-  const timestamps = cooldowns.get(command.name);
-  const cooldownAmount = (command.cooldown || 3) * 1000;
+  const timestamps = cooldowns.get(bot.commands.get(command).name);
+  const cooldownAmount = (bot.commands.get(command).cooldown || 3) * 1000;
   if (timestamps.has(msg.author.id)) {
 	const expirationTime = timestamps.get(msg.author.id) + cooldownAmount;
 
 	if (now < expirationTime) {
 		const timeLeft = (expirationTime - now) / 1000;
-		return msg.reply(`please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${bot.uniq_command.name}\` command.`);
+		return msg.reply(`please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${bot.commands.get(command).name}\` command.`);
 	}
 }
   if (!bot.commands.has(command)) return;
