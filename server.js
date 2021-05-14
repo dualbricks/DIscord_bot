@@ -63,7 +63,9 @@ for(const file of uniq_commandsFiles) {
 
 
 bot.on('message', msg => {
-        if(cooldowns.has(uniq)command)
+        if(!cooldowns.has(uniq_command.name) {
+           cooldowns.set(uniq_command.name, new Discord.Collection())
+           }
   
        if (!msg.content.startsWith(process.env.MADE_WITH) && !msg.author.bot) {
        var upcase = msg.content.toLowerCase()
