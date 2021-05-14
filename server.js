@@ -46,8 +46,11 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 bot.commands = new Discord.Collection();
 bot.uniq_commands = new Discord.Collection();
+bot.cooldowns = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands');
 const uniq_commandsFiles = fs.readdirSync('./uniq_commands');
+const {cooldowns} = bot;
+if(!cooldowns.has(uniq_commands.name))
 for (const file of commandFiles) {
     const command = require(`./commands/${file}`);
     bot.commands.set(command.name, command);
