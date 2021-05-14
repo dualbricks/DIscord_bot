@@ -21,7 +21,7 @@ module.exports = {
         var userId = msg.author.id; //user id here
         var userData = xpFile[userId];
 
-        function sum(obj) {
+        function sum1(obj) {
           var total = 0;
           for (var el in obj) {
             if (obj.hasOwnProperty(el)) {
@@ -29,8 +29,12 @@ module.exports = {
             }
           }
         }
-        console.log(sum(userData.balls));
-        if (sum(userData.balls) == 0) {
+        var sum = 0;
+        for(let key in userData.balls) {
+          sum += userData.balls
+        }
+        console.log(sum);
+        if (sum <= 0) {
           msg.reply("You dont have enough balls! Use !balls to get some~");
           return;
         }
