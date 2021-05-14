@@ -50,7 +50,6 @@ bot.cooldowns = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands');
 const uniq_commandsFiles = fs.readdirSync('./uniq_commands');
 const {cooldowns} = bot;
-if(!cooldowns.has(uniq_commands.name))
 for (const file of commandFiles) {
     const command = require(`./commands/${file}`);
     bot.commands.set(command.name, command);
@@ -64,6 +63,7 @@ for(const file of uniq_commandsFiles) {
 
 
 bot.on('message', msg => {
+        if(cooldowns.has(uniq)command)
   
        if (!msg.content.startsWith(process.env.MADE_WITH) && !msg.author.bot) {
        var upcase = msg.content.toLowerCase()
