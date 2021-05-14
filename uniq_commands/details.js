@@ -19,8 +19,9 @@ module.exports = {
         `${xpFile[name].img_pokemon[i]} `
       );
 
-      pokemon_details.setFooter(`${JSON.stringify(xpFile[name].balls)}`);
-      msg.reply(pokemon_details);
+      
     }
+    pokemon_details.setFooter(`${JSON.stringify(xpFile[name].balls)}`);
+      msg.reply(pokemon_details);
   }
 };
