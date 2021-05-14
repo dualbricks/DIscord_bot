@@ -1,9 +1,7 @@
 {
   "315430130056953861": {
     "balls": {
-      "master-ball": [
-        0
-      ],
+      "master-ball": 1,
       "ultra-ball": 4
     }
   },
