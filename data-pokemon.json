@@ -6,7 +6,10 @@
       "ninetales",
       "horsea",
       "espeon",
-      "slowpoke"
+      "slowpoke",
+      "cubone",
+      "charmeleon",
+      "mew"
     ],
     "img_pokemon": [
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png",
@@ -14,14 +17,16 @@
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png",
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png",
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/196.png",
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png"
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png"
     ],
-    "total_number": 6,
+    "total_number": 9,
     "balls": {
-      "0": -1,
       "poke-ball": 4,
       "master-ball": 4,
-      "safari-ball": 3
+      "safari-ball": 3,
     }
   },
   "750366151569178714": {
