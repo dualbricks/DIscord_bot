@@ -1,6 +1,9 @@
 {
   "315430130056953861": {
-    "pokemons_caught": ["porygon", "suicune"],
+    "pokemons_caught": [
+      "porygon",
+      "suicune"
+    ],
     "img_pokemon": [
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png",
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/245.png"
@@ -8,11 +11,14 @@
     "total_number": 2,
     "balls": {
       "poke-ball": 4,
-      "master-ball": 4
+      "master-ball": 4,
+      "safari-ball": 3
     }
   },
   "750366151569178714": {
-    "pokemons_caught": ["machoke"],
+    "pokemons_caught": [
+      "machoke"
+    ],
     "img_pokemon": [
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png"
     ],

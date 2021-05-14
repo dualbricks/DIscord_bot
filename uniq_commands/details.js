@@ -13,20 +13,13 @@ module.exports = {
     pokemon_details
       .setTitle(`POKEMONS CAUGHT: total ${xpFile[name].total_number}`)
       .setDescription("catch them all");
-    for (var i = 0; i < xpFile[name].total_number - 1; i++) {
-      if (
-        !xpFile[name].img_pokemon == null &&
-        !xpFile[name].pokemons_caught == null
-      ) {
-        pokemon_details.addField(
-          `${xpFile[name].pokemons_caught[i]}`,
-          `${xpFile[name].img_pokemon[i]} `
-        );
-      }
-      for (var j = 0; j < xpFile[name].balls - 1; j++) {
-        pokemon_details.addField(`${xpFile[name].balls[j]}`);
-      }
-      pokemon_details.setFooter(`${xpFile[name].balls}`);
+    for (var i = 0; i < xpFile[name].total_number ; i++) {
+      pokemon_details.addField(
+        `${xpFile[name].pokemons_caught[i]}`,
+        `${xpFile[name].img_pokemon[i]} `
+      );
+
+      pokemon_details.setFooter(`${JSON.stringify(xpFile[name].balls)}`);
       msg.reply(pokemon_details);
     }
   }

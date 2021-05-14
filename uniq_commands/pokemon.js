@@ -23,7 +23,16 @@ module.exports = {
         var xpRead = fs.readFileSync(xpPath);
         var xpFile = JSON.parse(xpRead); //ready for use
         var userId = msg.author.id; //user id here
-
+        function sum(obj) {
+          var total = 0;
+          for(var el in obj) {
+            if(obj.hasOwnProperty(el))
+              {
+                
+              }
+          }
+          
+        }
         if (!xpFile[userId].pokemons_caught) {
           //this checks if data for the user has already been created
           xpFile[userId] = {
