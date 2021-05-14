@@ -29,7 +29,7 @@ module.exports = {
             }
           }
         }
-
+        console.log(sum(userData.balls));
         if (sum(userData.balls) == 0) {
           msg.reply("You dont have enough balls! Use !balls to get some~");
           return;
@@ -45,9 +45,12 @@ module.exports = {
         };
 
         var size_balls = Object.size(userData.balls);
-        var check =
-        var random_ball = Math.floor(Math.random() * size_balls);
-        var ball_name = Object.keys(userData.balls)[random_ball];
+        var starting_ball = 0;
+        var ball_name = Object.keys(userData.balls)[0];
+        while (userData.balls[ball_name <= 0] && starting_ball < size_balls) {
+          ball_name = Object.keys(userData.balls)[starting_ball++];
+        }
+
         userData.balls[ball_name]--;
         if (!userData.pokemons_caught) {
           //this checks if data for the user has already been created

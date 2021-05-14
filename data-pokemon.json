@@ -21,7 +21,13 @@
       "muk",
       "nidoran-m",
       "pupitar",
-      "cloyster"
+      "cloyster",
+      "qwilfish",
+      "totodile",
+      "rattata",
+      "miltank",
+      "graveler",
+      "ledian"
     ],
     "img_pokemon": [
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png",
@@ -44,13 +50,19 @@
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png",
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png",
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/247.png",
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png"
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/211.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/158.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/241.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/166.png"
     ],
-    "total_number": 21,
+    "total_number": 27,
     "balls": {
-      "poke-ball": 1,
+      "poke-ball": -5,
       "master-ball": 2,
-      "safari-ball": -2
+      "safari-ball": 0
     }
   },
   "750366151569178714": {
