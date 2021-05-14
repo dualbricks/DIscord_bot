@@ -24,7 +24,7 @@ module.exports = {
         var xpFile = JSON.parse(xpRead); //ready for use
         var userId = msg.author.id; //user id here
 
-        if (!xpFile[userId]) {
+        if (!xpFile[userId].pokemons_caught) {
           //this checks if data for the user has already been created
           xpFile[userId] = {
             pokemons_caught: [name],

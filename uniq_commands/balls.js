@@ -23,8 +23,8 @@ module.exports = {
             var xpFile = JSON.parse(xpRead); //ready for use
             var userId = msg.author.id; //user id here
             if (!xpFile[userId] && xpFile[userId].balls == null) {
-              xpFile[userId] = {
-                balls: { [response2.name]: [number] }
+              xpFile[userId].balls = 
+                { [response2.name]: [number] }
               };
               fs.writeFileSync(xpPath, JSON.stringify(xpFile, null, 2));
             } else {

@@ -1,9 +1,12 @@
 {
   "315430130056953861": {
-    "balls": {
-      "master-ball": 1,
-      "ultra-ball": 4
-    }
+    "pokemons_caught": [
+      "porygon"
+    ],
+    "img_pokemon": [
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png"
+    ],
+    "total_number": 1
   },
   "750366151569178714": {
     "pokemons_caught": [
