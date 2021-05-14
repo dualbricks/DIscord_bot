@@ -22,13 +22,11 @@ module.exports = {
             var xpRead = fs.readFileSync(xpPath);
             var xpFile = JSON.parse(xpRead); //ready for use
             var userId = msg.author.id; //user id here
-            if (!xpFile[userId] && xpFile[userId].balls == null) {
-              xpFile[userId].balls = 
-                { [response2.name]: [number] }
-              };
+            if (!xpFile[userId].balls) {
+              xpFile[userId].balls = { [response2.name]: number };
               fs.writeFileSync(xpPath, JSON.stringify(xpFile, null, 2));
             } else {
-              if (xpFile[userId].balls[response2.name] == null) {
+              if (!xpFile[userId].balls[response2.name]) {
                 xpFile[userId].balls[response2.name] = number;
               } else {
                 xpFile[userId].balls[response2.name] += number;
