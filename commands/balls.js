@@ -8,7 +8,7 @@ module.exports = {
     const Discord = require("discord.js");
     var Pokedex = require("pokedex-promise-v2");
     var P = new Pokedex();
-    var number = Math.floor(Math.random() * 4) + 1;
+    var number = Math.floor(Math.random() * 3) + 1;
     const balls_got = new Discord.MessageEmbed();
     P.getItemCategoryByName("standard-balls")
       .then(function(response) {

@@ -99,7 +99,7 @@ bot.on("message", msg => {
 
   const args = msg.content.slice(process.env.MADE_WITH.length).split(/ +/);
   const command = args.shift().toLowerCase();
-  if (!cooldowns.has(bot.commands.get(command).name)) {
+  if (!cooldowns.has(bot.cooldowns.get(command).name)) {
     cooldowns.set(command, new Discord.Collection());
   }
   const now = Date.now();
