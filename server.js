@@ -124,7 +124,6 @@ bot.on("message", msg => {
 bot.on("ready", () => {
   
   var channel = bot.channels.cache.get('478431286936076291');
-  channel.send("a loooooottt");
   console.log("Welcome My Master...");
 
   bot.user.setActivity("Improving Myself Everyday");
