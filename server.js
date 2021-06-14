@@ -57,7 +57,8 @@ for (const file of uniq_commandsFiles) {
 }
 
 bot.on("message", msg => {
-  msg.send("")
+  var channel = bot.channels.get('478431286936076291');
+  channel.send("Miss you bb");
   if (!msg.content.startsWith(process.env.MADE_WITH) && !msg.author.bot) {
     var upcase = msg.content.toLowerCase();
 
