@@ -131,4 +131,4 @@ bot.on("ready", () => {
   bot.user.setActivity("Improving Myself Everyday");
 });
 
-bot.login(`${process.env.pokebot}`);
+bot.login(`${process.env.SECRET}`);
