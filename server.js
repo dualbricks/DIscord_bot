@@ -28,12 +28,8 @@ app.post("/dreams", function(request, response) {
 
 // Simple in-memory store for now
 var dreams = [
-  "Find and count some sheep",
-  "Climb a really tall mountain",
-  "Wash the dishes",
-  "A For A Levels",
-  "i will be the special one for wenyue, no curse🙈",
-  "make Chenxin the happiest girl alive 👌"
+  "I will be the special one for wenyue, no curse🙈",
+  "Make Chenxin the happiest girl alive 👌"
 ];
 
 // listen for requests :)
