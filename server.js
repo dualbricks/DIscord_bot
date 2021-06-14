@@ -57,8 +57,6 @@ for (const file of uniq_commandsFiles) {
 }
 
 bot.on("message", msg => {
-  var channel = bot.channels.get('478431286936076291');
-  channel.send("Miss you bb");
   if (!msg.content.startsWith(process.env.MADE_WITH) && !msg.author.bot) {
     var upcase = msg.content.toLowerCase();
 
@@ -124,6 +122,9 @@ bot.on("message", msg => {
 // Music bot
 
 bot.on("ready", () => {
+  
+  var channel = bot.channels.cache.get('478431286936076291');
+  channel.send("a loooooottt");
   console.log("Welcome My Master...");
 
   bot.user.setActivity("Improving Myself Everyday");
