@@ -95,35 +95,13 @@ bot.on("message", msg => {
 
   const args = msg.content.slice(process.env.MADE_WITH.length).split(/ +/);
   const command = args.shift().toLowerCase();
-  if (!cooldowns.has(bot.cooldowns.get(command).name)) {
-    cooldowns.set(command, new Discord.Collection());
-  }
-  const now = Date.now();
-  const timestamps = cooldowns.get(bot.commands.get(command).name);
-  const cooldownAmount = (bot.commands.get(command).cooldown || 3) * 1000;
-  if (timestamps.has(msg.author.id)) {
-	const expirationTime = timestamps.get(msg.author.id) + cooldownAmount;
-
-	if (now < expirationTime) {
-		const timeLeft = (expirationTime - now) / 1000;
-		return msg.reply(`please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${bot.commands.get(command).name}\` command.`);
-	}
-}
-  if (!bot.commands.has(command)) return;
-
-  try {
-    bot.commands.get(command).execute(msg, args);
-  } catch (error) {
-    console.error(error);
-    msg.reply("there was an error trying to execute that command!");
-  }
-});
 
 // Music bot
 
 bot.on("ready", () => {
   
   var channel = bot.channels.cache.get('478431286936076291');
+  channel.send("You miss me ?")
   console.log("Welcome My Master...");
 
   bot.user.setActivity("Improving Myself Everyday");
