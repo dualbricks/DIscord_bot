@@ -95,13 +95,14 @@ bot.on("message", msg => {
 
   const args = msg.content.slice(process.env.MADE_WITH.length).split(/ +/);
   const command = args.shift().toLowerCase();
+});
 
 // Music bot
 
 bot.on("ready", () => {
   
   var channel = bot.channels.cache.get('478431286936076291');
-  channel.send("You miss me ?")
+  
   console.log("Welcome My Master...");
 
   bot.user.setActivity("Improving Myself Everyday");
