@@ -4,7 +4,8 @@
     "discord.js": "^12.5.3",
     "request": "",
     "opusscript": "0.0.3",
-    "pokedex-promise-v2": "^3.3.0"
+    "pokedex-promise-v2": "^3.3.2",
+    "stack": "^0.1.0"
   },
   "name": "my-glitch-app",
   "version": "0.0.1",
