@@ -95,7 +95,7 @@ bot.on("message", msg => {
 
   const args = msg.content.slice(process.env.MADE_WITH.length).split(/ +/);
   const command = args.shift().toLowerCase();
-});
+})
 
 // Music bot
 

@@ -5,7 +5,6 @@ dependencies:
   opusscript: 0.0.3
   pokedex-promise-v2: 3.3.2
   request: 2.88.2
-  stack: 0.1.0
 packages:
   /@discordjs/collection/0.1.6:
     dev: false
@@ -807,12 +806,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-HXXqVUq7+pcKeLqqZj6mHFUMvXtOJt1uoUx09pFW6011inTMxqI8BA8PM95myrIyyKwdnzjdFjLiE6KBPVtJIg==
-  /stack/0.1.0:
-    dev: false
-    engines:
-      '0': node >= 0.2.0
-    resolution:
-      integrity: sha1-6SNZipvlHmF2gsshzxsoGKRJraI=
   /statuses/1.5.0:
     dev: false
     engines:
@@ -915,5 +908,4 @@ specifiers:
   npm: ^7.18.1
   opusscript: 0.0.3
   pokedex-promise-v2: ^3.3.2
-  request: ''
-  stack: ^0.1.0
+  request: ^2.88.2
