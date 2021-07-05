@@ -5,7 +5,7 @@
     "pokedex-promise-v2": "^3.3.2",
     "express": "^4.17.1",
     "request": "^2.88.2",
-    "npm": "^7.18.1"
+    "npm": "^7.19.0"
   },
   "name": "my-glitch-app",
   "version": "0.0.1",
