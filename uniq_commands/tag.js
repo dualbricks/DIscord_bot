@@ -10,7 +10,6 @@ module.exports = {
     var prefix = msg.content.split(' ')[0] + msg.content.split(' ')[1]
     var content = msg.content.slice(prefix.length + 2)
     msg.channel.send(`${user} ${content}`)
-    msg.delete('3000')
   }
 };
   
