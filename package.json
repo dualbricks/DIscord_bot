@@ -16,7 +16,7 @@
     "start": "node server.js"
   },
   "engines": {
-    "node": "12.x"
+    "node": ""
   },
   "repository": {
     "url": "https://glitch.com/edit/#!/blaze-aftershave"
