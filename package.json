@@ -1,11 +1,12 @@
 {
   "dependencies": {
-    "discord.js": "^12.5.3",
-    "opusscript": "0.0.3",
-    "pokedex-promise-v2": "^3.3.2",
-    "express": "^4.17.1",
+    "discord.js": "^13.6.0",
+    "opusscript": "^0.0.8",
+    "pokedex-promise-v2": "^4.0.0",
+    "express": "^4.17.3",
     "request": "^2.88.2",
-    "npm": "^7.19.0"
+    "npm": "^8.4.1",
+    "node": "^17.4.0"
   },
   "name": "my-glitch-app",
   "version": "0.0.1",

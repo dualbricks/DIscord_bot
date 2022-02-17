@@ -28,8 +28,6 @@ app.post("/dreams", function(request, response) {
 
 // Simple in-memory store for now
 var dreams = [
-  "I will be the special one for wenyue, no curse🙈",
-  "Make Chenxin the happiest girl alive 👌"
 ];
 
 // listen for requests :)
