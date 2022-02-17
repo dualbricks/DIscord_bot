@@ -37,7 +37,7 @@ var listener = app.listen(process.env.PORT, function() {
 
 const fs = require("fs");
 const Discord = require("discord.js");
-const bot = new Discord.Client();
+const bot = new Discord.Client({intents: []});
 bot.commands = new Discord.Collection();
 bot.uniq_commands = new Discord.Collection();
 bot.cooldowns = new Discord.Collection();
